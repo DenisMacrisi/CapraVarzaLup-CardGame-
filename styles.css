@@ -1,0 +1,128 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  background-color: rgb(140, 233, 140);
+}
+
+body {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(2, 5rem);
+  grid-template-rows: 8rem 3rem 8rem;
+  gap: 0.5rem;
+  justify-content: center;
+  padding-top: 1rem;
+}
+
+.deck {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  border: 1px solid black;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+  border-radius: 0.5rem;
+  color: white;
+  user-select: none;
+}
+
+.computer-deck {
+  background-color: red;
+}
+.player-deck {
+  background-color: blue;
+  cursor: pointer;
+}
+
+.score {
+  grid-column: span 2;
+  display: flex;
+  font-size: 30px;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  align-items: left;
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+}
+
+.card {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+}
+
+.card-slot {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+  user-select: none;
+}
+
+.card::before,
+.card::after {
+  content: attr(data-value);
+  font-size: 1rem;
+  position: absolute;
+}
+
+.card::before {
+  top: 0.5rem;
+  left: 0.5rem;
+}
+
+.card::after {
+  bottom: 0.5rem;
+  right: 0.5rem;
+  transform: rotate(180deg);
+}
+
+.btn {
+  width: 155px;
+  height: 40px;
+  color: black;
+  background-color: yellow;
+  text-decoration: none;
+  user-select: none;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  align-content: center;
+  font-size: 15px;
+  font-style: bold;
+}
+
+.instructions,
+.btn {
+  cursor: help;
+  font-size: 25px;
+  font-weight: bold;
+  transform: translateX(7px);
+  border-radius: 10px;
+  margin-top: 25px;
+}
+
+.inst {
+  font-weight: bold;
+  display: flex;
+  transform: translateY(100px);
+  transform: translateX(-300px);
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instructions</title>
+    <link rel="stylesheet" href="styles_instructions.css" />
+    <script src="rules_script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <p id="ro-lan" class="ro-rules">
+        - Pachetul conține 32 de cărți: <br />
+        * 10 cărți capră 🐐 <br />
+        * 10 cărți varză 🥬<br />
+        * 10 cărți lup 🐺<br />
+        * 2 cărți vânător 🎯 <br />
+        - Cartile se amesteca si se împart în mod egal fiecărul jucător <br />
+        - Fiecare jucător întoarce prima carte din vârful pachetului și victoria
+        de decide astefel: <br />
+        * 🐐 mănâncă 🥬, dar este mâncată de 🐺<br />
+        * 🐺 mănâncă 🐐, dar se îneacă cu 🥬<br />
+        * 🥬 îneacă 🐺, dar este mâncată de 🐐<br />
+        * 🎯 învinge orice carte <br />
+        - În caz de egalitate nimeni nu primește niciun punct <br />
+      </p>
+      <p id="en-lan" class="en-rules">
+        - The pack contains 32 cards: <br />
+        * 10 goat cards 🐐 <br />
+        * 10 cabbage cards 🥬 <br />
+        * 10 wolf cards 🐺 <br />
+        * 2 hunter cards 🎯 <br />
+        - The cards are shuffled and dealt evenly to each player <br />
+        - Each player flips the first card from the top of their deck and the victory is decided ass follows: <br />
+        * 🐐 eats 🥬 but is eaten by 🐺<br />
+        * 🐺 eats 🐐 but drowns with 🥬 <br />
+        * 🥬 drowns 🐺 but is eaten by 🐐 <br />
+        * 🎯 defeats any card <br />
+        - In case of a tie no one gets any points <br />
+      </p>
+    </div>
+    <div class="language">
+      <button type="button" class="btn ro" onclick="showRoRules()">
+        <img src="ro.png" alt="" />
+      </button>
+      <button type="button" class="btn en" onclick="showEnRules()">
+        <img src="usa.png" alt="" />
+      </button>
+    </div>
+  </body>
+</html>
